@@ -14,6 +14,7 @@ public class HomePaseador extends AppCompatActivity {
     Button botSitiosInteres;
     Button botPerfil;
     Button botAdminMascota;
+    Button botAdminPaseo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class HomePaseador extends AppCompatActivity {
         botSitiosInteres = findViewById(R.id.boton_sitInteres);
         botPerfil = findViewById(R.id.boton_perfil);
         botAdminMascota = findViewById(R.id.boton_adminMascota);
+        botAdminPaseo = findViewById(R.id.boton_adminPaseo);
 
         botAgendarPaseo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +39,7 @@ public class HomePaseador extends AppCompatActivity {
         botSitiosInteres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), MapView.class));
+                startActivity(new Intent(getBaseContext(), LugaresdeInteres.class));
             }
         });
 
@@ -52,6 +54,13 @@ public class HomePaseador extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getBaseContext(), CrearEditarMascota.class));
+            }
+        });
+
+        botAdminPaseo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), PaseosDisponibles.class));
             }
         });
     }

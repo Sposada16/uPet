@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/boton_adminPaseo"
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:layout_marginStart="50dp"
@@ -54,9 +54,9 @@
         android:layout_marginEnd="50dp"
         android:background="#EEEAE3"
         android:text="@string/home_place_interest"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_adminPaseo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintTop_toTopOf="@+id/boton_adminPaseo" />
 
     <TextView
         android:id="@+id/textView"
@@ -87,9 +87,9 @@
         android:layout_marginTop="25dp"
         android:text="@string/home_manage_walk"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/boton_adminPaseo"
+        app:layout_constraintStart_toStartOf="@+id/boton_adminPaseo"
+        app:layout_constraintTop_toBottomOf="@+id/boton_adminPaseo" />
 
     <TextView
         android:id="@+id/textView4"
@@ -111,7 +111,7 @@
         android:background="#EEEAE3"
         android:text="@string/home_schedule_walk"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/boton_adminPaseo" />
 
     <TextView
         android:id="@+id/textView5"

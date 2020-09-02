@@ -29,6 +29,10 @@
         <activity android:name=".PerfilUsuario"/>
         <activity android:name=".ListaMascotas" />
         <activity android:name=".CrearEditarMascota"/>
+
+        <activity android:name=".DetallePaseoCliente"/>
+        <activity android:name=".PaseosDisponibles"/>
+        <activity android:name=".LugaresdeInteres"/>
     </application>
 
 </manifest>

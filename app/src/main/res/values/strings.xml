@@ -77,4 +77,11 @@
     <string name="edad">Edad</string>
     <string name="raza">Raza</string>
 
+    //Parte Daniel
+    <string-array name="tiposdelugar">
+        <item>Tipos de Lugar1</item>
+        <item>Tipos de Lugar2</item>
+        <item>Tipos de Lugar3</item>
+    </string-array>
+
 </resources>
