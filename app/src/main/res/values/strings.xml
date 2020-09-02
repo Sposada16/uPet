@@ -62,5 +62,19 @@
     <string name="ce_walk_pend">Final recorrido</string>
     <string name="ce_walk_desc">Descripcion</string>
 
+    //Parte Steven
+    <string name="perfil_usuario">Perfil usuario</string>
+    <string name="nombre_usuario">Nombre usuario</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="e_mail">E-mail</string>
+    <string name="celular">Celular</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="barrio">Barrio</string>
+    <string name="actualizar_informacion">Actualizar información</string>
+    <string name="crear_editar_mascota">Crear/Editar Mascota</string>
+    <string name="especie">Especie</string>
+    <string name="edad">Edad</string>
+    <string name="raza">Raza</string>
 
 </resources>

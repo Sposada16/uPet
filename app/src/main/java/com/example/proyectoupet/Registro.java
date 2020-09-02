@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class registro extends AppCompatActivity {
+public class Registro extends AppCompatActivity {
 
     Button botCancelar;
     Button botSiguiente;
@@ -23,14 +23,14 @@ public class registro extends AppCompatActivity {
         botCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), inicioSesion.class));
+                startActivity(new Intent(getBaseContext(), InicioSesion.class));
             }
         });
 
         botSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), registroExt.class));
+                startActivity(new Intent(getBaseContext(), RegistroExt.class));
             }
         });
     }

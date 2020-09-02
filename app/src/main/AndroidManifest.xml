@@ -9,22 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".registroExt"></activity>
-        <activity android:name=".registro" />
-        <activity android:name=".inicioSesion">
+        <activity android:name=".RegistroExt"/>
+        <activity android:name=".Registro" />
+        <activity android:name=".InicioSesion">
             <intent-filter>
                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mapView"/>
+        <activity android:name=".MapView"/>
 
         <activity
-            android:name=".agendarPaseo"
+            android:name=".AgendarPaseo"
             android:exported="true" />
 
-        <activity android:name=".homePaseador"/>
+        <activity android:name=".HomePaseador"/>
+
+        <activity android:name=".PerfilUsuario"/>
+        <activity android:name=".ListaMascotas" />
+        <activity android:name=".CrearEditarMascota"/>
     </application>
 
 </manifest>

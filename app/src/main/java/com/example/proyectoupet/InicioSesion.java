@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class inicioSesion extends AppCompatActivity {
+public class InicioSesion extends AppCompatActivity {
 
     TextView clickRegistro;
     Button botLogin;
@@ -24,14 +24,14 @@ public class inicioSesion extends AppCompatActivity {
         botLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), homePaseador.class));
+                startActivity(new Intent(getBaseContext(), HomePaseador.class));
             }
         });
 
         clickRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), registro.class));
+                startActivity(new Intent(getBaseContext(), Registro.class));
             }
         });
     }

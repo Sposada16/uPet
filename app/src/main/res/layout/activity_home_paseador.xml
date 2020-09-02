@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E04149"
-    tools:context=".homePaseador">
+    tools:context=".HomePaseador">
 
     <include
         android:id="@+id/toolbar"
@@ -23,21 +23,21 @@
         android:background="#EEEAE3"
         android:text="@string/home_manage_walk"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/boton_perfil" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/boton_adminMascota"
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:layout_marginEnd="50dp"
         android:background="#EEEAE3"
         android:text="@string/home_manage_pet"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_perfil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="@+id/boton_perfil" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/boton_perfil"
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:layout_marginStart="50dp"
@@ -65,9 +65,9 @@
         android:layout_marginTop="25dp"
         android:text="@string/home_profile"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/boton_perfil"
+        app:layout_constraintStart_toStartOf="@+id/boton_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/boton_perfil" />
 
     <TextView
         android:id="@+id/textView2"
@@ -76,9 +76,9 @@
         android:layout_marginTop="25dp"
         android:text="@string/home_manage_pet"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintEnd_toEndOf="@+id/boton_adminMascota"
+        app:layout_constraintStart_toStartOf="@+id/boton_adminMascota"
+        app:layout_constraintTop_toBottomOf="@+id/boton_adminMascota" />
 
     <TextView
         android:id="@+id/textView3"

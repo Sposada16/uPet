@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.DatePickerDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class agendarPaseo extends AppCompatActivity {
+public class AgendarPaseo extends AppCompatActivity {
 
     DatePickerDialog dpd;
     Calendar cr ;
@@ -38,14 +37,14 @@ public class agendarPaseo extends AppCompatActivity {
         /*botCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), homePaseador.class));
+                startActivity(new Intent(getBaseContext(), HomePaseador.class));
             }
         });
 
         botCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), homePaseador.class));
+                startActivity(new Intent(getBaseContext(), HomePaseador.class));
             }
         });*/
     }
@@ -62,7 +61,7 @@ public class agendarPaseo extends AppCompatActivity {
                 int day = cr.get(Calendar.DAY_OF_MONTH);
                 int month = cr.get(Calendar.MONTH);
                 int year = cr.get(Calendar.YEAR);
-                dpd = new DatePickerDialog(agendarPaseo.this, new DatePickerDialog.OnDateSetListener() {
+                dpd = new DatePickerDialog(AgendarPaseo.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int nYear, int nMonth, int nDay) {
                         tv.setText(nDay+"/"+nMonth+"/"+nYear);

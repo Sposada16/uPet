@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class homePaseador extends AppCompatActivity {
+public class HomePaseador extends AppCompatActivity {
 
     Button botAgendarPaseo;
     Button botSitiosInteres;
+    Button botPerfil;
+    Button botAdminMascota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,18 +24,34 @@ public class homePaseador extends AppCompatActivity {
 
         botAgendarPaseo = findViewById(R.id.boton_agPaseo);
         botSitiosInteres = findViewById(R.id.boton_sitInteres);
+        botPerfil = findViewById(R.id.boton_perfil);
+        botAdminMascota = findViewById(R.id.boton_adminMascota);
 
         botAgendarPaseo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), agendarPaseo.class));
+                startActivity(new Intent(getBaseContext(), AgendarPaseo.class));
             }
         });
 
         botSitiosInteres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), mapView.class));
+                startActivity(new Intent(getBaseContext(), MapView.class));
+            }
+        });
+
+        botPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), PerfilUsuario.class));
+            }
+        });
+
+        botAdminMascota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), CrearEditarMascota.class));
             }
         });
     }

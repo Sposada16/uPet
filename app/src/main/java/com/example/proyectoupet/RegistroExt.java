@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class registroExt extends AppCompatActivity {
+public class RegistroExt extends AppCompatActivity {
 
     Button botRegistro;
 
@@ -21,7 +21,7 @@ public class registroExt extends AppCompatActivity {
         botRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), inicioSesion.class));
+                startActivity(new Intent(getBaseContext(), InicioSesion.class));
             }
         });
     }
