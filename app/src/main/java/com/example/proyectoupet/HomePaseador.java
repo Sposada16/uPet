@@ -60,7 +60,7 @@ public class HomePaseador extends AppCompatActivity {
         botAdminPaseo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), PaseosDisponibles.class));
+                startActivity(new Intent(getBaseContext(), PaseosAgendadosActivity.class));
             }
         });
     }

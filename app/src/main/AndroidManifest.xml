@@ -33,6 +33,17 @@
         <activity android:name=".DetallePaseoCliente"/>
         <activity android:name=".PaseosDisponibles"/>
         <activity android:name=".LugaresdeInteres"/>
+
+        <activity android:name=".PaseosAgendadosActivity"/>
+        <activity android:name=".SeleccionarSolicitantesActitity"
+            android:parentActivityName=".PaseosAgendadosActivity">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaseosAgendadosActivity" />
+
+        </activity>
+
     </application>
 
 </manifest>
