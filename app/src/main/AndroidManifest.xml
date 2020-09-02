@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.android.maps.v2.API_KEY"
-            android:value="YOUR_MAP_API" />
         <activity android:name=".registroExt"></activity>
         <activity android:name=".registro" />
         <activity android:name=".inicioSesion">
@@ -20,8 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mapView"/>
 
+        <activity
+            android:name=".agendarPaseo"
+            android:exported="true" />
 
+        <activity android:name=".homePaseador"/>
     </application>
 
 </manifest>
