@@ -43,7 +43,14 @@
                 android:value=".PaseosAgendadosActivity" />
 
         </activity>
+        <activity android:name=".SeleccionarDetalleSolicitanteActivity"
+            android:parentActivityName=".SeleccionarSolicitantesActitity">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SeleccionarSolicitantesActitity" />
 
+        </activity>
     </application>
 
 </manifest>
