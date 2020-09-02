@@ -17,7 +17,7 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        botCancelar = findViewById(R.id.reg_botonCancelar);
+        botCancelar = findViewById(R.id.ver_BotonVolver);
         botSiguiente = findViewById(R.id.reg_botonSiguiente);
 
         botCancelar.setOnClickListener(new View.OnClickListener() {

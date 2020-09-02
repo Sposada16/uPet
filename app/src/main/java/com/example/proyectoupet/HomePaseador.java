@@ -46,7 +46,7 @@ public class HomePaseador extends AppCompatActivity {
         botPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), PerfilUsuario.class));
+                startActivity(new Intent(getBaseContext(), VerPerfil.class));
             }
         });
 
