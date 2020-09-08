@@ -53,7 +53,8 @@ public class HomePaseador extends AppCompatActivity {
         botAdminMascota.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), CrearEditarMascota.class));
+                startActivity(new Intent(getBaseContext(), ListaMascotas.class));
+                //SI ESPERO UN RESULTADO DE LA OTRA ACTIVIDAD, COLOCAR START ACTIVITY FOR RESULT
             }
         });
 
