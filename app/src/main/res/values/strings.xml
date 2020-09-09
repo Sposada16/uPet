@@ -83,5 +83,11 @@
         <item>Tipos de Lugar2</item>
         <item>Tipos de Lugar3</item>
     </string-array>
-
+    <string name="ver_mapa">Ver en Mapa</string>
+    <string name="detalle_paseo">Detalle Paseo</string>
+    <string name="paseos_confirmados">Paseos Confirmados</string>
+    <string name="img_prueba">Imagen de Perfil</string>
+    <string name="direccion_del_paseador">Direccion del Paseador:</string>
+    <string name="nombre_del_paseador">Nombre del Paseador:</string>
+    <string name="solicitar_paseo">Solicitar Paseo</string>
 </resources>
