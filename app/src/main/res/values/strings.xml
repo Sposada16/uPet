@@ -42,6 +42,7 @@
     <string name="tipo_mascota">Tipo de\nmascota</string>
     <string name="dueno">Dueño</string>
     <string name="direccion">Dirección</string>
+    <string name="imagen_mapa">Imagen Mapa</string>
 
     //Parte Randy
     <string name="general_create">Crear</string>

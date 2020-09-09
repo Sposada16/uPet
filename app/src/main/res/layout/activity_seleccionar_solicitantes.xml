@@ -15,24 +15,17 @@
         android:background="@color/blancoPet"
         android:text="@string/cancelar_seleccionados"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:titleTextColor="@color/colorUpetBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toEndOf="@+id/buttonConfirmar" />
 
-    <androidx.appcompat.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blancoPet"
-        android:theme="?attr/actionBarTheme"
+        layout="@layout/toolbar_upet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:logo="@drawable/ic_menu"
-        app:title="Solicitantes"
-        app:titleMarginStart="40dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Toolbar
         android:id="@+id/toolbar2"
@@ -52,7 +45,6 @@
         android:layout_width="183dp"
         android:layout_height="58dp"
         android:textStyle="bold"
-        android:titleTextColor="@color/colorUpetBlack"
         app:layout_constraintBottom_toBottomOf="@id/toolbar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -81,7 +73,6 @@
         android:layout_marginBottom="24dp"
         android:listSelector="@color/rojoPet"
         android:longClickable="true"
-        android:titleTextColor="@color/colorUpetBlack"
         app:layout_constraintBottom_toTopOf="@+id/buttonConfirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +87,6 @@
         android:background="@color/blancoPet"
         android:text="@string/confirmar_seleccionados"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:titleTextColor="@color/colorUpetBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

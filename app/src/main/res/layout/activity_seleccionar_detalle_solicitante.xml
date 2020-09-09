@@ -6,18 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".SeleccionarDetalleSolicitanteActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blancoPet"
-        android:theme="?attr/actionBarTheme"
+        layout="@layout/toolbar_upet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:logo="@drawable/ic_menu"
-        app:title="Detalle Solicitante"
-        app:titleMarginStart="40dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -93,7 +87,6 @@
             android:background="@color/blancoPet"
             android:text="@string/confirmar"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:titleTextColor="@color/colorUpetBlack"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -155,7 +148,6 @@
             android:background="@color/blancoPet"
             android:text="@string/cancelar"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:titleTextColor="@color/colorUpetBlack"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -165,6 +157,7 @@
             android:id="@+id/imageView3"
             android:layout_width="208dp"
             android:layout_height="244dp"
+            android:contentDescription="@string/imagen_mapa"
             app:layout_constraintBottom_toTopOf="@+id/buttonConfirmar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
