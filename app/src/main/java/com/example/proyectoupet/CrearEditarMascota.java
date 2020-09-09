@@ -2,7 +2,9 @@ package com.example.proyectoupet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -13,8 +15,6 @@ public class CrearEditarMascota extends AppCompatActivity {
     EditText especie;
     EditText raza;
     Button crear;
-    Button editar;
-    Button eliminar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +25,13 @@ public class CrearEditarMascota extends AppCompatActivity {
         especie = findViewById(R.id.editTextEspecie);
         raza = findViewById(R.id.editTextRaza);
         crear = findViewById(R.id.buttonCrearMascota);
-        editar = findViewById(R.id.buttonEditarMascota);
-        eliminar = findViewById(R.id.buttonEliminarMascota);
+
+        crear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }
